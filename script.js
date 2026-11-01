@@ -1,82 +1,122 @@
-/* script.js — AG landing (v72)
-   - Mobile menu toggle (robust)
-   - Cookie banner
-   - Footer year
+/* albertguilemany.com — script.js (v4)
+   - Cookie banner: fix iOS/Safari
+   - Formulari: fetch GET + redirect gracies per idioma
+   - Menú mòbil: sistema únic
+   - Selector idioma
+   - Any actual
 */
+document.addEventListener('DOMContentLoaded', () => {
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Footer year
-  const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
+  /* 0) Any actual */
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // Mobile nav toggle
-  const btn = document.querySelector(".nav-toggle");
-  const nav = document.querySelector("nav.nav");
+  /* 1) Email obfuscat */
+  const emailLink = document.getElementById('contact-email');
+  if (emailLink) {
+    const u = 'info', d = 'albertguilemany.com';
+    emailLink.href = `mailto:${u}@${d}`;
+    emailLink.textContent = `${u}@${d}`;
+  }
 
-  if (btn && nav) {
-    // Ensure button is clickable
-    btn.style.pointerEvents = "auto";
+  /* 2) Menú mòbil */
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const nav = document.getElementById('site-nav');
+  const body = document.body;
 
-    const closeMenu = () => {
-      document.body.classList.remove("nav-open");
-      btn.setAttribute("aria-expanded", "false");
-    };
+  const closeNav = () => {
+    body.classList.remove('nav-open');
+    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+  };
 
-    const toggleMenu = () => {
-      const isOpen = document.body.classList.toggle("nav-open");
-      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    };
-
-    // Init
-    btn.setAttribute("type", "button");
-    btn.setAttribute("aria-expanded", "false");
-
-    // Click on button
-    btn.addEventListener("click", (e) => {
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      toggleMenu();
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
-
-    // Close on link click
-    nav.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => closeMenu());
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+    document.addEventListener('click', (e) => {
+      if (!body.classList.contains('nav-open')) return;
+      if (!nav.contains(e.target) && !navToggle.contains(e.target)) closeNav();
     });
-
-    // Close on click outside
-    document.addEventListener("click", (e) => {
-      if (!document.body.classList.contains("nav-open")) return;
-      const inside = nav.contains(e.target) || btn.contains(e.target);
-      if (!inside) closeMenu();
-    });
-
-    // Close on ESC
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMenu();
-    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeNav(); });
   }
 
-  // Cookie banner
-  const KEY = "ag_cookie_consent";
-  const banner = document.getElementById("cookie-banner");
+  /* 3) Cookie banner — fix iOS/Safari */
+  const banner = document.getElementById('cookieBanner');
+  const btnAccept = document.getElementById('cookieAccept');
+  const btnReject = document.getElementById('cookieReject');
+
+  const hideBanner = () => {
+    if (banner) { banner.classList.remove('visible'); banner.setAttribute('aria-hidden', 'true'); }
+  };
+
   if (banner) {
-    const saved = localStorage.getItem(KEY);
-    if (!saved) banner.hidden = false;
-
-    document.getElementById("cookie-accept")?.addEventListener("click", () => {
-      localStorage.setItem(KEY, "accepted");
-      banner.hidden = true;
-    });
-
-    document.getElementById("cookie-reject")?.addEventListener("click", () => {
-      localStorage.setItem(KEY, "rejected");
-      banner.hidden = true;
-    });
-
-    window.agOpenCookieBanner = function () {
-      localStorage.removeItem(KEY);
-      banner.hidden = false;
-      banner.scrollIntoView({ behavior: "smooth", block: "end" });
-    };
+    const stored = localStorage.getItem('ag_cookies');
+    if (!stored) { banner.classList.add('visible'); banner.setAttribute('aria-hidden', 'false'); }
+    if (btnAccept) btnAccept.addEventListener('click', () => { localStorage.setItem('ag_cookies', 'accepted'); hideBanner(); });
+    if (btnReject) btnReject.addEventListener('click', () => { localStorage.setItem('ag_cookies', 'rejected'); hideBanner(); });
   }
+
+  /* 4) Formulari — redirigeix a gracies en l'idioma correcte */
+  const form = document.getElementById('contactForm');
+  if (form) {
+    const setHidden = (id, val) => { const el = document.getElementById(id); if (el) el.value = val; };
+    setHidden('source', document.getElementById('source')?.value || 'web');
+    setHidden('page_url', window.location.href);
+    setHidden('referrer', document.referrer || '(directe)');
+    setHidden('user_agent', navigator.userAgent);
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      setHidden('page_url', window.location.href);
+      setHidden('referrer', document.referrer || '(direct)');
+
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+      const params = new URLSearchParams(new FormData(form)).toString();
+      fetch(form.action + '?' + params, { method: 'GET', mode: 'no-cors' });
+
+      // Detectar idioma per redirigir al gracies correcte
+      const path = window.location.pathname;
+      let gracias = 'https://albertguilemany.com/gracies.html';
+      if (path.startsWith('/es/') || path.includes('/es/')) {
+        gracias = 'https://albertguilemany.com/es/gracies.html';
+      } else if (path.startsWith('/en/') || path.includes('/en/')) {
+        gracias = 'https://albertguilemany.com/en/gracies.html';
+      }
+
+      setTimeout(() => { window.location.href = gracias; }, 800);
+    });
+  }
+
+  /* 5) Selector d'idioma */
+  initLangSelector();
 });
+
+function initLangSelector() {
+  const BASE = 'https://albertguilemany.com';
+  const LANGS = { ca: BASE + '/', es: BASE + '/es/', en: BASE + '/en/' };
+  const path = window.location.pathname;
+
+  let currentLang = 'ca';
+  if (path.startsWith('/es/') || path.includes('/es/')) currentLang = 'es';
+  else if (path.startsWith('/en/') || path.includes('/en/')) currentLang = 'en';
+
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.classList.toggle('lang-active', el.dataset.lang === currentLang);
+  });
+
+  /* Selector mòbil: assegura que el selector del nav mòbil funcioni */
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = el.dataset.lang;
+      sessionStorage.setItem('ag_lang_redirected', '1');
+      window.location.href = LANGS[lang] || LANGS['ca'];
+    });
+  });
+}

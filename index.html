@@ -1,80 +1,369 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
-  <link rel="stylesheet" href="style.css?v=71">
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-
-<!-- Basics -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Albert Guilemany" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Albert Guilemany">
 
   <!-- SEO -->
-  <title>Consultor en Transformació Digital i IA | Albert Guilemany</title>
-  <meta name="description" content="Consultoria en transformació digital i IA aplicada. Automatitza processos, guanya temps i millora decisions amb solucions pràctiques per a pimes i professionals." />
+  <title>Consultor Transformació Digital i IA per a Pimes | Albert Guilemany</title>
+  <meta name="description" content="Ajudem pimes i autònoms a guanyar temps i reduir errors amb tecnologia i IA pràctiques. Pressupost tancat, resultats mesurables. Girona i remot.">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://albertguilemany.com/" />
+  <!-- Canonical + hreflang multiidioma -->
+  <link rel="canonical" href="https://albertguilemany.com/">
+  <link rel="alternate" hreflang="ca" href="https://albertguilemany.com/">
+  <link rel="alternate" hreflang="es" href="https://albertguilemany.com/es/">
+  <link rel="alternate" hreflang="en" href="https://albertguilemany.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://albertguilemany.com/en/">
 
-  <!-- Open Graph (LinkedIn / WhatsApp / Facebook) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-<meta property="og:title" content="Transformació digital i IA aplicada | Albert Guilemany">
-<meta property="og:description" content="Solucions pràctiques d'automatització i IA per a pimes i professionals.">
-<meta property="og:url" content="https://albertguilemany.com/">
-<meta property="og:image" content="https://albertguilemany.com/assets/og-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Consultor en Transformació Digital i IA | Albert Guilemany" />
-  <meta name="twitter:description" content="Consultoria en IA i transformació digital per empreses. Automatitza processos i guanya eficiència." />
-  <meta name="twitter:image" content="https://albertguilemany.com/images/og-cover.jpg" />
+  <meta property="og:title" content="Consultor Transformació Digital i IA per a Pimes | Albert Guilemany">
+  <meta property="og:description" content="Automatitzem processos, implantem IA pràctica i formem equips perquè el teu negoci creixi de forma ordenada.">
+  <meta property="og:url" content="https://albertguilemany.com/">
+  <meta property="og:image" content="https://albertguilemany.com/images/og-cover.png">
+  <meta property="og:locale" content="ca_ES">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consultor Transformació Digital i IA | Albert Guilemany">
+  <meta name="twitter:description" content="Automatitzem processos, implantem IA pràctica i formem equips. Resultats en setmanes.">
+  <meta name="twitter:image" content="https://albertguilemany.com/images/og-cover.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="https://albertguilemany.com/favicon.ico?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://albertguilemany.com/favicon-32x32.png?v=3">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://albertguilemany.com/favicon-16x16.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://albertguilemany.com/apple-touch-icon.png?v=3">
+  <link rel="manifest" href="https://albertguilemany.com/site.webmanifest?v=3">
 
   <!-- Styles -->
+  <link rel="stylesheet" href="https://albertguilemany.com/style.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Structured data (Schema.org) -->
+  <!-- Structured Data: ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Albert Guilemany",
-    "legalName": "Albert Guilemany",
-    "taxID": "46358038C",
+    "name": "Albert Guilemany — Consultor Transformació Digital i IA",
+    "alternateName": "AG Consultoria",
     "url": "https://albertguilemany.com",
-    "email": "info@albertguilemany.com",
+    "logo": "https://albertguilemany.com/images/logo-ag.png",
+    "image": "https://albertguilemany.com/images/og-cover.png",
     "telephone": "+34673343827",
+    "email": "info@albertguilemany.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Carrer Mas Sec, 26",
+      "streetAddress": "Llagostera",
       "addressLocality": "Llagostera",
       "addressRegion": "Girona",
       "postalCode": "17240",
       "addressCountry": "ES"
     },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.8289, "longitude": 2.8932 },
     "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Girona" },
-      { "@type": "AdministrativeArea", "name": "Catalunya" },
-      { "@type": "Country", "name": "Espanya" }
+      { "@type": "City", "name": "Llagostera" },
+      { "@type": "City", "name": "Girona" },
+      { "@type": "State", "name": "Catalunya" }
+    ],
+    "serviceType": [
+      "Consultoria en transformació digital",
+      "Automatització de processos empresarials",
+      "Intel·ligència artificial aplicada per a pimes",
+      "Optimització comercial i operativa",
+      "Formació digital per a empreses",
+      "Roadmap de transformació digital"
+    ],
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.linkedin.com/in/albertguilemany/",
+      "https://www.instagram.com/albertguilemany/"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Albert Guilemany",
+      "jobTitle": "Consultor en Transformació Digital i IA",
+      "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "EOI Business School" },
+        { "@type": "EducationalOrganization", "name": "Grupo IOE / UNADE" }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quant triga a veure's un resultat real?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Normalment en 2–6 setmanes amb un pilot focalitzat. Comencem per allò que genera més impacte ràpid i des d'allà escalem el que funciona." }
+      },
+      {
+        "@type": "Question",
+        "name": "He d'invertir en eines noves?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No necessàriament. Primer optimitzem el que ja tens. Només es proposa tecnologia nova quan l'avantatge és clar i justificable." }
+      },
+      {
+        "@type": "Question",
+        "name": "I si el projecte dona uns resultats inferiors als esperats?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Definim els criteris d'èxit per escrit i amb xifres concretes abans de començar. Si queden per sota, el projecte s'atura sense cost addicional i et quedes amb l'aprenentatge i les recomanacions." }
+      },
+      {
+        "@type": "Question",
+        "name": "El meu equip té poc coneixement tecnològic. Funcionarà?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. La formació i l'acompanyament formen part de cada projecte. Tot el que posem en marxa, l'equip ho pot utilitzar i mantenir de forma autònoma." }
+      }
     ]
   }
   </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inici", "item": "https://albertguilemany.com/" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Font override per a Plus Jakarta Sans */
+    body { font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif; }
+
+    /* ── Language selector ── */
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 3px;
+      background: rgba(255,255,255,.9);
+      flex-shrink: 0;
+    }
+    .lang-selector button {
+      padding: 4px 9px;
+      border: none;
+      background: transparent;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      letter-spacing: .03em;
+      transition: background .15s, color .15s;
+    }
+    .lang-selector button:hover { background: var(--soft); color: var(--text); }
+    .lang-selector button.lang-active { background: #111214; color: #fff; }
+
+    /* ── Hero enfortit ── */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--soft);
+      margin-bottom: 18px;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      display: inline-block;
+    }
+
+    /* ── Service cards: icona de color ── */
+    .card-icon {
+      width: 46px; height: 46px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .card-icon svg { width: 24px; height: 24px; }
+
+    /* ── Stat block ── */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+    .stat-item {
+      background: #fff;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-number { font-size: 1.9rem; font-weight: 800; letter-spacing: -.04em; color: var(--text); }
+    .stat-label { font-size: .82rem; color: var(--muted); margin-top: 4px; }
+
+    /* ── Mètode visual ── */
+    .method-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 32px;
+      position: relative;
+    }
+    .method-steps::before {
+      content: '';
+      position: absolute;
+      top: 22px; left: 12%; right: 12%;
+      height: 2px;
+      background: linear-gradient(90deg, #111214 0%, rgba(17,18,20,.15) 100%);
+      z-index: 0;
+    }
+    .method-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .method-step-num {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: #111214;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .method-step h3 { font-size: .95rem; margin-bottom: 6px; }
+    .method-step p { font-size: .88rem; color: var(--muted); }
+
+    /* ── Per a qui — pill list ── */
+    .pill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .pill {
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--text);
+      background: #fff;
+    }
+    .pill-primary { background: #111214; color: #fff; border-color: #111214; }
+
+    /* ── Testimoni únic ── */
+    .testimonial-block {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: 28px 28px 22px;
+      position: relative;
+    }
+    .testimonial-block::before {
+      content: '\201C';
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--line);
+      position: absolute;
+      top: 12px; left: 20px;
+      font-family: Georgia, serif;
+    }
+    .testimonial-block blockquote {
+      margin: 0; padding: 0 0 0 4px;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--text);
+    }
+    .testimonial-meta {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 700; font-size: .95rem;
+      flex-shrink: 0;
+    }
+    .testimonial-name { font-weight: 700; font-size: .95rem; }
+    .testimonial-role { font-size: .85rem; color: var(--muted); }
+    .testimonial-result {
+      margin-top: 14px;
+      padding: 10px 14px;
+      background: rgba(34,197,94,.08);
+      border: 1px solid rgba(34,197,94,.2);
+      border-radius: 10px;
+      font-size: .88rem;
+      font-weight: 600;
+      color: #16a34a;
+    }
+
+    /* ── CTA section ── */
+    .cta-section {
+      background: #111214;
+      color: #fff;
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin: 48px 0 0;
+    }
+    .cta-section h2 { color: #fff; margin-bottom: 12px; }
+    .cta-section p { color: rgba(255,255,255,.65); max-width: 54ch; margin: 0 auto 28px; }
+    .cta-section .btn-primary {
+      background: #fff; color: #111214; border-color: #fff;
+      font-size: 1rem; padding: 14px 28px;
+    }
+    .cta-section .btn-ghost { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.8); }
+
+    /* ── Responsive ajustos ── */
+    @media (max-width: 980px) {
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .method-steps { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .method-steps::before { display: none; }
+    }
+    @media (max-width: 720px) {
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .method-steps { grid-template-columns: 1fr 1fr; }
+      .cta-section { padding: 32px 20px; }
+      .lang-selector { display: none; } /* Al mòbil va dins el menú */
+    }
+  </style>
 </head>
 <body>
-  <!-- Cookie Banner -->
-  <div id="cookie-banner" class="cookie-banner" hidden>
+
+  <!-- Cookie Banner (FIX iOS: usa id, sense onclick inline) -->
+  <div class="cookie-banner" id="cookieBanner" aria-live="polite" aria-hidden="true">
     <div class="cookie-inner">
-      <p>
-        Aquest lloc web utilitza únicament cookies tècniques necessàries per al seu funcionament.
-        Pots acceptar-les o configurar-les segons les teves preferències.
-        Més informació a la
-        <a href="./politica-cookies.html">Política de cookies</a>
-        <a href="#" onclick="agOpenCookieBanner();return false;">Preferències de cookies</a>.
-      </p>
+      <p>Aquest lloc web utilitza únicament cookies tècniques necessàries. Més informació a la <a href="https://albertguilemany.com/politica-cookies.html">Política de cookies</a>.</p>
       <div class="cookie-actions">
-        <button id="cookie-accept" class="btn btn-primary">Acceptar</button>
-        <button id="cookie-reject" class="btn btn-secondary">Rebutjar</button>
+        <button class="btn" id="cookieAccept">Acceptar</button>
+        <button class="btn" id="cookieReject">Rebutjar</button>
       </div>
     </div>
   </div>
@@ -83,293 +372,366 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <!-- Logo -->
-      <a class="brand" href="#top" aria-label="Inici">
-        <img class="brand-logo" src="./images/logo-ag.png" alt="AG — Albert Guilemany" />
+      <a class="brand" href="#top" aria-label="Inici — Albert Guilemany">
+        <img class="brand-logo" src="https://albertguilemany.com/images/logo-ag.png" alt="AG — Albert Guilemany" width="180" height="48">
       </a>
-
-      <!-- Navegació principal (visible en desktop) -->
       <nav id="site-nav" class="nav" aria-label="Navegació principal">
         <a href="#serveis">Serveis</a>
-        <a href="#metode">Mètode</a>
-        <a href="#per-a-qui">A qui va dirigit</a>
-        <a class="nav-cta" href="#contacte">Contacte</a>
+        <a href="#metode">Com treballem</a>
+        <a href="#contacte" class="nav-cta">Contacte</a>
+        <div class="lang-selector" id="lang-mobile">
+          <button data-lang="ca" aria-label="Català">CA</button>
+          <button data-lang="es" aria-label="Castellano">ES</button>
+          <button data-lang="en" aria-label="English">EN</button>
+        </div>
       </nav>
-
-      <!-- Botó toggle menú mòbil -->
-      <button class="nav-toggle" type="button"
-        aria-label="Obrir menú"
-        aria-controls="site-nav"
-        aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
+      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+        <!-- Selector idioma desktop -->
+        <div class="lang-selector" id="lang-desktop">
+          <button data-lang="ca" aria-label="Català">CA</button>
+          <button data-lang="es" aria-label="Castellano">ES</button>
+          <button data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Obrir menú" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="contingut">
-      <section id="top" class="hero">
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section id="top" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Consultoria • Transformació digital • IA aplicada</p>
-          <h1>Transformació digital i intel·ligència artificial aplicada al teu negoci</h1>
-          <p class="lead">
-            Ajudo empreses, professionals i negocis locals a simplificar processos, guanyar temps i prendre millors decisions
-            mitjançant tecnologia i IA, de manera pràctica i adaptada a la seva realitat.
-          </p>
-
+          <h1>Fes que el teu negoci treballi per tu i avanci amb criteri</h1>
+          <p class="lead">Ajudem pimes a guanyar temps, reduir errors i prendre millors decisions amb tecnologia i IA adaptades al seu dia a dia real. Solucions concretes, pressupost tancat, resultats mesurables.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacte">Parlem del teu cas</a>
-            <a class="btn btn-ghost" href="#serveis">Veure serveis</a>
+            <a class="btn btn-ghost" href="#serveis">Veure com ho fem</a>
           </div>
-
-          <p class="microtrust">Resposta personalitzada. Sense spam. Sense compromís.</p>
-        </div>
-
-        <div class="hero-card" aria-label="Resum de valor">
-          <div class="hero-card-inner">
-            <h2>Resultats, no fum</h2>
-            <p>
-              Solucions concretes, assumibles i alineades amb el teu dia a dia. De la diagnosi a la implementació i el seguiment.
-            </p>
-            <ul class="hero-bullets">
-              <li>Processos més simples</li>
-              <li>Automatitzacions útils</li>
-              <li>IA aplicada a tasques reals</li>
-              <li>Millor control comercial i operatiu</li>
+          <div class="microtrust-block">
+            <ul class="microtrust-list">
+              <li>✓&nbsp;Primera sessió de 45 min, gratuïta</li>
+              <li>✓&nbsp;Resposta personalitzada en 24h</li>
+              <li>✓&nbsp;Pressupost tancat abans de començar</li>
             </ul>
           </div>
         </div>
+        <div class="hero-card" aria-label="AI Act — Obligació legal per a pimes">
+          <div class="hero-card-inner">
+            <p class="eyebrow" style="margin:0 0 10px;color:#dc2626;">⚠ Obligació legal · En vigor des de l'1 agost 2024 · Obligació general: 2 agost 2026</p>
+            <h2 style="font-size:1.2rem;margin-bottom:12px;">La teva empresa utilitza IA? L'AI Act ja t'afecta</h2>
+            <p style="color:var(--muted);">El Reglament Europeu d'Intel·ligència Artificial obliga totes les empreses que utilitzen eines d'IA a documentar-ne l'ús i avaluar-ne els riscos. Això inclou ChatGPT, Copilot, automatitzacions i chatbots. L'obligació de formació del personal ja és vigent des del 2 de febrer de 2025.</p>
+            <ul class="hero-bullets">
+              <li>Inventari de sistemes d'IA en ús</li>
+              <li>Avaluació de riscos i mesures aplicades</li>
+              <li>Documentació apta per a auditoria</li>
+              <li>Entrega en 5 dies hàbils</li>
+            </ul>
+            <a class="btn btn-primary" href="https://albertguilemany.com/ai-act-express.html" style="margin-top:18px;width:100%;justify-content:center;background:#dc2626;border-color:#dc2626;">Compleix l'AI Act →</a>
+            <p style="margin-top:10px;font-size:.8rem;color:var(--muted);text-align:center;">Termini general: 2 d'agost de 2026</p>
+          </div>
+        </div>
       </div>
-
-      <div class="hero-bg" aria-hidden="true">
-        <div class="grid-overlay"></div>
-      </div>
+      <div class="hero-bg" aria-hidden="true"><div class="grid-overlay"></div></div>
     </section>
 
-    <!-- SERVICES -->
+
+
+    <!-- ══════════════════════════════════════
+         SERVEIS
+    ══════════════════════════════════════ -->
     <section id="serveis" class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Què puc fer pel teu negoci</h2>
-      <p>
-        La transformació digital no va de tecnologia complexa, sinó de fer millor el que ja fas.
-        El meu objectiu és aplicar eines digitals i intel·ligència artificial de forma útil,
-        realista i alineada amb el teu dia a dia.
-      </p>
-    </div>
-
-    <div class="cards">
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-1.jpg');"></div>
-        <div class="card-body">
-          <h3>Diagnosi digital</h3>
-          <p>Revisió del negoci i dels processos actuals per detectar punts de millora i oportunitats reals.</p>
-          <ul>
-            <li>Mapa de processos</li>
-            <li>Priorització d'impacte</li>
-            <li>Accions ràpides</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-2.jpg');"></div>
-        <div class="card-body">
-          <h3>Automatització de tasques</h3>
-          <p>Eliminació de feina repetitiva per guanyar temps i reduir errors.</p>
-          <ul>
-            <li>Fluxos operatius</li>
-            <li>Emails i seguiments</li>
-            <li>Integracions entre eines</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-3.jpg');"></div>
-        <div class="card-body">
-          <h3>IA aplicada</h3>
-          <p>Aplicació pràctica de la intel·ligència artificial en tasques reals del dia a dia.</p>
-          <ul>
-            <li>Assistents interns</li>
-            <li>Generació i anàlisi de contingut</li>
-            <li>Millora en la presa de decisions</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-4.jpg');"></div>
-        <div class="card-body">
-          <h3>Optimització comercial i operativa</h3>
-          <p>Millora del control i seguiment de l'activitat comercial i operativa.</p>
-          <ul>
-            <li>Processos comercials</li>
-            <li>Seguiment d'oportunitats</li>
-            <li>Indicadors clau</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-5.jpg');"></div>
-        <div class="card-body">
-          <h3>Acompanyament i formació</h3>
-          <p>Formació adaptada al nivell real de l'equip per garantir adopció.</p>
-          <ul>
-            <li>Sessions pràctiques</li>
-            <li>Documentació clara</li>
-            <li>Seguiment continu</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media" style="background-image:url('./images/service-6.jpg');"></div>
-        <div class="card-body">
-          <h3>Roadmap i evolució</h3>
-          <p>Definició d'un full de ruta clar i realista per evolucionar el negoci.</p>
-          <ul>
-            <li>Objectius prioritzats</li>
-            <li>Calendari d'accions</li>
-            <li>Mesura de resultats</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-    <!-- METHOD -->
-    <section id="metode" class="section section-alt">
       <div class="container">
         <div class="section-head">
-          <h2>Com treballo</h2>
-          <p>Un enfocament clar, progressiu i sense complicacions innecessàries.</p>
+          <p class="eyebrow">El que fem</p>
+          <h2>Sis maneres de fer avançar el teu negoci</h2>
+          <p>Cada empresa és diferent. Comencem entenent el teu cas i definim exactament el que té sentit per a tu — res de paquets estàndard que serveixen per a tothom i per a ningú.</p>
         </div>
+        <div class="cards">
 
-        <ol class="steps">
-          <li class="step">
-            <div class="step-number">1</div>
-            <div class="step-body">
-              <h3>Anàlisi inicial</h3>
-              <p>Entenc com funciona el teu negoci, els processos i les necessitats reals.</p>
+          <a class="card card-link" href="https://albertguilemany.com/diagnosi-digital.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-1.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(99,102,241,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+              </div>
+              <h3>Diagnosi digital</h3>
+              <p>Abans d'invertir en res, cal saber on ets. En dues setmanes tens un mapa complet del teu negoci: processos, eines, colls d'ampolla i les oportunitats amb més retorn.</p>
+              <ul><li>Visió completa i honesta del negoci</li><li>Prioritats ordenades per impacte real</li><li>Primer pas clar i aplicable</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
             </div>
-          </li>
-          <li class="step">
-            <div class="step-number">2</div>
-            <div class="step-body">
-              <h3>Proposta clara i adaptada</h3>
-              <p>Defineixo solucions concretes, assumibles i alineades amb els teus objectius.</p>
+          </a>
+
+          <a class="card card-link" href="https://albertguilemany.com/automatitzacio-processos.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-2.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(52,211,153,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <h3>Automatització de processos</h3>
+              <p>Seguiments, correus, recordatoris, leads... tot allò que fas manualment cada dia es pot fer sol. Recuperes hores cada setmana sense canviar com treballes.</p>
+              <ul><li>Fluxos que funcionen sols entre les teves eines</li><li>Menys errors, menys tasques repetitives</li><li>Resultats visibles en poques setmanes</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
             </div>
-          </li>
-          <li class="step">
-            <div class="step-number">3</div>
-            <div class="step-body">
-              <h3>Implementació pràctica</h3>
-              <p>Apliquem les eines i els canvis de manera ordenada, sense interrompre l'activitat.</p>
+          </a>
+
+          <a class="card card-link" href="https://albertguilemany.com/intelligencia-artificial.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-3.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(167,139,250,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V12h-4V9.5A4 4 0 0 1 8 6a4 4 0 0 1 4-4z"/><path d="M8 12H5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1"/><path d="M16 12h3a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1"/><path d="M9 17v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"/></svg>
+              </div>
+              <h3>IA aplicada al negoci</h3>
+              <p>La IA és útil quan se sap on aplicar-la. Identifiquem els casos concrets on pot estalviar-te hores reals i ho posem en marxa de forma que l'equip ho adopti naturalment.</p>
+              <ul><li>Assistents i chatbots adaptats al teu cas</li><li>Generació automàtica de documents i informes</li><li>Integrat amb les eines que ja utilitzes</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
             </div>
-          </li>
-          <li class="step">
-            <div class="step-number">4</div>
-            <div class="step-body">
-              <h3>Seguiment i millora contínua</h3>
-              <p>Revisem resultats, ajustem i fem evolucionar la solució amb el temps.</p>
+          </a>
+
+          <a class="card card-link" href="https://albertguilemany.com/optimitzacio-operativa.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-4.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(251,146,60,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+              </div>
+              <h3>Optimització operativa</h3>
+              <p>Quan l'equip treballa molt però els resultats s'hi veuen poc, sol ser un problema de procés. Ordenem el funcionament comercial i operatiu perquè tothom treballi cap al mateix lloc.</p>
+              <ul><li>Procés comercial clar i amb seguiment</li><li>Indicadors útils i accionables</li><li>Menys improvisació, més previsió</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
             </div>
-          </li>
-        </ol>
+          </a>
+
+          <a class="card card-link" href="https://albertguilemany.com/formacio-empreses.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-5.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(56,189,248,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>Formació per a equips</h3>
+              <p>Una eina nova només funciona si l'equip la fa seva. Les sessions són pràctiques, adaptades al nivell real de cada persona, i inclouen suport fins que el canvi sigui hàbit.</p>
+              <ul><li>Formació aplicada al cas concret de l'empresa</li><li>Materials clars per al dia a dia</li><li>Acompanyament fins a l'adopció real</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
+            </div>
+          </a>
+
+          <a class="card card-link" href="https://albertguilemany.com/roadmap-transformacio-digital.html">
+            <div class="card-media" style="background-image:url('https://albertguilemany.com/images/service-6.jpg')"></div>
+            <div class="card-body">
+              <div class="card-icon" style="background:rgba(244,114,182,.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/><circle cx="7" cy="6" r="2" fill="#f472b6" stroke="none"/><circle cx="12" cy="12" r="2" fill="#f472b6" stroke="none"/><circle cx="17" cy="18" r="2" fill="#f472b6" stroke="none"/></svg>
+              </div>
+              <h3>Roadmap digital</h3>
+              <p>Tens iniciatives obertes per tot arreu i vols saber per on atacar. Definim junts quines accions aporten més valor ara, quines poden esperar i com mesurar que avances.</p>
+              <ul><li>Prioritats clares amb criteri objectiu</li><li>Calendari realista i assumible</li><li>Revisió periòdica per mantenir el rumb</li></ul>
+              <span class="btn btn-ghost" style="margin-top:auto;">Saber-ne més →</span>
+            </div>
+          </a>
+
+        </div>
       </div>
     </section>
 
-    <section id="per-a-qui" class="section">
-      <div class="container audience">
-        <div class="audience-copy">
-          <h2>A qui va dirigit</h2>
-          <p>Aquest servei és per a qui vol avançar amb criteri, però sense complicacions ni teories buides.</p>
-          <ul class="checklist">
-            <li>Autònoms i professionals</li>
-            <li>Petites i mitjanes empreses</li>
-            <li>Negocis locals</li>
-            <li>Equips comercials i operatius</li>
-            <li>Empreses que volen aplicar IA de forma pràctica</li>
-          </ul>
+    <!-- ══════════════════════════════════════
+         MÈTODE
+    ══════════════════════════════════════ -->
+    <section id="metode" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Com treballem</p>
+          <h2>Clar des del primer dia</h2>
+          <p>Sabem que confiar en una consultoria externa és una decisió important. Per això el procés és transparent: saps en tot moment què estem fent, per què i quan ho veuràs.</p>
         </div>
-        <aside class="audience-aside">
+        <div class="method-steps">
+          <div class="method-step">
+            <div class="method-step-num">1</div>
+            <h3>Entenem el teu cas</h3>
+            <p>Escoltem com funciona el negoci, quins problemes tens i quins objectius vols assolir. Sense assumpcions.</p>
+          </div>
+          <div class="method-step">
+            <div class="method-step-num">2</div>
+            <h3>Proposta concreta</h3>
+            <p>Presentem una proposta amb abast, preu fix, terminis i criteris d'èxit mesurables. Tot per escrit, sense lletra petita.</p>
+          </div>
+          <div class="method-step">
+            <div class="method-step-num">3</div>
+            <h3>Ho posem en marxa</h3>
+            <p>Implementem de forma ordenada, sense interrompre l'activitat. L'equip aprèn mentre ho fem.</p>
+          </div>
+          <div class="method-step">
+            <div class="method-step-num">4</div>
+            <h3>Mesurem i ajustem</h3>
+            <p>Comprovem que els resultats es mantenen i fem els ajustos necessaris. El projecte continua fins que tot funciona com cal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PER A QUI
+    ══════════════════════════════════════ -->
+    <section id="per-a-qui" class="section section-alt">
+      <div class="container audience">
+        <div>
+          <p class="eyebrow">Per a qui és</p>
+          <h2>Per a qui vol avançar sense perdre el nord</h2>
+          <p>Treballem amb autònoms i pimes que volen créixer de forma ordenada, aprofitar la tecnologia de manera pràctica i deixar de dependre de processos manuals que frenen el negoci.</p>
+          <div class="pill-list">
+            <span class="pill pill-primary">Autònoms i pimes</span>
+            <span class="pill">Comerços i serveis locals</span>
+            <span class="pill">Equips comercials</span>
+            <span class="pill">Empreses en creixement</span>
+            <span class="pill">Qui vol aplicar IA de forma pràctica</span>
+          </div>
+        </div>
+        <aside>
           <div class="quote">
-            <p>"El més important és que la tecnologia s'adapti al negoci, i no al revés."</p>
-            <span>AG — Albert Guilemany</span>
+            <p style="font-size:1.1rem; letter-spacing:-.01em;">"La tecnologia ha d'adaptar-se al negoci, mai al revés. Si una solució resol un problema real, s'implementa. Si l'únic argument és la novetat, s'espera."</p>
+            <span style="display:block; margin-top:12px; color:var(--muted); font-size:.9rem;">— Albert Guilemany</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id="contacte" class="section section-alt">
+    <!-- ══════════════════════════════════════
+         TESTIMONI
+    ══════════════════════════════════════ -->
+    <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Contacte</h2>
-          <p>Explica'm breument el teu cas i m'hi posaré en contacte sense cap compromís.</p>
+          <p class="eyebrow">Casos reals</p>
+          <h2>El que diuen els que ja treballen amb nosaltres</h2>
+        </div>
+        <div style="max-width:640px;">
+          <div class="testimonial-block">
+            <blockquote>
+              "Treballava sola i acabava el dia esgotada. Entre WhatsApps i canvis d'última hora, passava més temps gestionant l'agenda que atenent pacients. Amb l'Albert vaig ordenar el seguiment i els recordatoris van quedar automàtics. Ara l'agenda és molt més estable i tinc el mòbil per a mi."
+            </blockquote>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">MP</div>
+              <div>
+                <div class="testimonial-name">Mireia Puig</div>
+                <div class="testimonial-role">Osteòpata · Llagostera</div>
+              </div>
+            </div>
+            <div class="testimonial-result">✓ Recordatoris 100% automàtics · Menys temps de gestió cada dia</div>
+          </div>
         </div>
 
+        <div style="margin-top:24px; padding:22px 24px; border:1px solid var(--line); border-radius:var(--radius); background:var(--soft); max-width:640px;">
+          <p class="eyebrow" style="margin-bottom:8px;">Exemple de resultat típic</p>
+          <p style="color:var(--text); margin-bottom:10px;"><strong>Empresa de serveis, 12 persones:</strong> pressupostos i comandes gestionats per correu i Excel. Errors freqüents en lliuraments, seguiment completament manual.</p>
+          <p style="color:var(--muted); margin-bottom:0;">Sis setmanes després: flux automatitzat de pressupost → comanda → avís d'enviament. Errors de lliurament reduïts un 80%. L'equip treballa amb les mateixes eines de sempre, sense aprendre cap sistema nou.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════ -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Preguntes freqüents</p>
+          <h2>El que sol preguntar tothom abans de trucar</h2>
+          <p>Respostes directes, sense màrqueting.</p>
+        </div>
+        <div class="faq">
+          <details><summary>Quant triga a veure's un resultat real?</summary><p>En la majoria de casos, entre 2 i 6 setmanes amb un pilot ben focalitzat. Comencem per les millores que aporten més impacte ràpid i des d'allà escalem el que funciona.</p></details>
+          <details><summary>He de comprar eines noves o canviar el que tinc?</summary><p>El primer pas sempre és treure el màxim del que ja tens. Quan proposem una eina nova, és perquè el benefici és clar, concret i assumible per al teu negoci.</p></details>
+          <details><summary>El meu equip té poc coneixement tecnològic. Funcionarà?</summary><p>Sí, és el cas més habitual. La formació i l'acompanyament formen part de cada projecte. Tot el que posem en marxa, l'equip ho pot utilitzar i mantenir de forma autònoma.</p></details>
+          <details><summary>I si el projecte dona uns resultats inferiors als esperats?</summary><p>Definim els criteris d'èxit amb xifres concretes abans de començar. Si queden per sota, el projecte s'atura sense cost addicional i et quedes amb l'anàlisi i les recomanacions.</p></details>
+          <details><summary>Quin pressupost haig de preveure?</summary><p>La diagnosi digital és a preu fix: 450 €, deduïbles si continuem treballant junts. Els projectes d'automatització i IA van de 800 a 3.500 € segons l'abast. Sempre pressupost tancat i per escrit.</p></details>
+          <details><summary>Treballeu a tota Catalunya o només a Girona?</summary><p>Treballem a tota Catalunya i en remot per a tot l'estat. La majoria de sessions es fan per videoconferència; fem visites presencials quan té sentit per al projecte.</p></details>
+          <details><summary>Hi ha algun compromís en demanar informació?</summary><p>Cap. La primera conversa és gratuïta i sense cap compromís. Si veiem que podem aportar-te valor real, t'ho expliquem. Si el teu cas requereix un altre perfil, t'ho diem clarament i t'orientem.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACTE
+    ══════════════════════════════════════ -->
+    <section id="contacte" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Contacte</p>
+          <h2>Explica'm el teu cas</h2>
+          <p>Tres línies és suficient. Et respondré en menys de 24 hores amb una valoració honesta. Si té sentit continuar, quedem per una trucada de 45 minuts — sense cost i sense compromís.</p>
+        </div>
         <div class="contact-grid">
-          <form class="form" id="contactForm" action="send.php" method="post">
-
-            <label for="name">Nom</label>
-            <input id="name" name="name" autocomplete="name" required>
-
-            <label for="email">Correu electrònic</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-
-            <label for="tel">Telèfon</label>
-            <input id="tel" name="tel" type="tel" autocomplete="tel">
-
-            <label for="msg" class="full">Missatge</label>
-            <textarea id="msg" name="message" rows="5" required class="full"></textarea>
-
-            <button class="btn btn-primary" type="submit">Enviar missatge</button>
-            <p class="microtrust">Resposta personalitzada. Sense spam. Sense compromís.</p>
-          </form>
-
-          <div class="contact-card">
-            <h3>Dades de contacte</h3>
-            <p class="small">
-              Si prefereixes, pots escriure'm directament o trucar-me.
-            </p>
-            <dl class="contact-list">
-              <div>
-                <dt>Email</dt>
-                <dd><a href="mailto:info@albertguilemany.com">info@albertguilemany.com</a></dd>
-	      </div>
-              <div>
-                <dt>Telèfon</dt>
-                <dd><a href="tel:+34673343827">+34 673 343 827</a></dd>
+          <div class="contact-form">
+            <form class="form" id="contactForm"
+              action="https://script.google.com/macros/s/AKfycbxRd-GiN3XmqFBTBANj9hZlNJyutWeP4O5GNCe5OXGFtohuH0LpGi9o41jgc45iKL87/exec"
+              method="get">
+              <input type="hidden" id="source" name="source" value="web">
+              <input type="hidden" id="page_url" name="page_url" value="">
+              <input type="hidden" id="referrer" name="referrer" value="">
+              <input type="hidden" id="user_agent" name="user_agent" value="">
+              <label><span>Nom *</span><input id="name" name="name" type="text" autocomplete="name" required placeholder="El teu nom"></label>
+              <label><span>Correu electrònic *</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@empresa.com"></label>
+              <label><span>Telèfon</span><input id="phone" name="tel" type="tel" autocomplete="tel" placeholder="+34 600 000 000"></label>
+              <label class="full"><span>Explica'm el teu cas *</span><textarea id="message" name="message" rows="5" required placeholder="Quin és el teu negoci i on creus que pots millorar? (3 línies és suficient)"></textarea></label>
+              <button type="submit" class="btn-primary">Enviar missatge →</button>
+              <div class="microtrust-block full">
+                <p class="microtrust">Resposta en 24h · Sense spam · Sense compromís</p>
               </div>
-              <div>
-                <dt>Ubicació</dt>
-                <dd>17240 Llagostera, Girona, Catalunya</dd>
-
+            </form>
+          </div>
+          <div class="contact-copy">
+            <p class="lead">Treballem amb un nombre limitat de clients a la vegada per poder dedicar-hi l'atenció que cada projecte mereix.</p>
+            <p class="microtrust" style="margin-bottom:18px;">Cada projecte és diferent i ho tractem com a tal. Solucions concretes, pressupost tancat i resultats mesurables des del primer dia.</p>
+            <div class="contact-card">
+              <h3>Dades de contacte</h3>
+              <p class="small">O si prefereixes, escriu-me directament:</p>
+              <dl class="contact-list">
+                <div><dt>Email</dt><dd><a id="contact-email" href="mailto:info@albertguilemany.com">info@albertguilemany.com</a></dd></div>
+                <div><dt>Telèfon</dt><dd><a href="tel:+34673343827">+34 673 343 827</a></dd></div>
+                <div><dt>Ubicació</dt><dd>Catalunya · Girona · Llagostera</dd></div>
+              </dl>
+              <div class="contact-note">
+                <p>Primera sessió de 45 min gratuïta. Ens posem en contacte en 24h.</p>
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <p class="footer-brand"><strong>AG — Albert Guilemany</strong><br/>Consultor en Transformació Digital i IA</p>
+        <p class="footer-brand"><strong>AG — Albert Guilemany</strong><br>Consultor en Transformació Digital i IA</p>
         <p class="footer-small">© <span id="year"></span> AG. Tots els drets reservats.</p>
       </div>
       <div class="footer-links">
-        <a href="./avis-legal.html">Avís legal</a>
-        <a href="./politica-privacitat.html">Política de privacitat</a>
-        <a href="./politica-cookies.html">Política de cookies</a>
+        <a href="https://albertguilemany.com/avis-legal.html">Avís legal</a>
+        <a href="https://albertguilemany.com/politica-privacitat.html">Política de privacitat</a>
+        <a href="https://albertguilemany.com/politica-cookies.html">Política de cookies</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/albertguilemany/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Albert Guilemany">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/albertguilemany/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Albert Guilemany">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
       </div>
     </div>
   </footer>
-  <script src="script.js?v=72"></script>
+
+  <!-- Sticky CTA mobile -->
+  <div class="sticky-cta">
+    <a class="btn btn-primary" href="#contacte">Parlem del teu cas →</a>
+  </div>
+
+  <script src="https://albertguilemany.com/script.js"></script>
 </body>
 </html>

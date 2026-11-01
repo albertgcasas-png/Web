@@ -1,0 +1,523 @@
+{
+  "origin": "https://albertguilemany.com",
+  "retrieved_on": "2026-11-01",
+  "method": "HTTP GET of public pages and their same-origin resources; original response bytes preserved",
+  "files": [
+    {
+      "path": "ai-act-express.html",
+      "source_url": "https://albertguilemany.com/ai-act-express.html",
+      "resolved_url": "https://albertguilemany.com/ai-act-express.html",
+      "bytes": 22476,
+      "sha256": "bbcefda36a74d4fcfcfc143548cff2b899f4b65313e545ca35505987fd90bc8f",
+      "content_type": "text/html"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "source_url": "https://albertguilemany.com/apple-touch-icon.png?v=3",
+      "resolved_url": "https://albertguilemany.com/apple-touch-icon.png?v=3",
+      "bytes": 3913,
+      "sha256": "4140bfdc3fa4db4c2f319c51b57d39335a62a951dcced2fe9495c3e5a7e9c1bb",
+      "content_type": "image/png"
+    },
+    {
+      "path": "automatitzacio-processos.html",
+      "source_url": "https://albertguilemany.com/automatitzacio-processos.html",
+      "resolved_url": "https://albertguilemany.com/automatitzacio-processos.html",
+      "bytes": 19917,
+      "sha256": "f371ebb2f48708ffda45f39959b9d909e6b32a74ae0040e5036ef12acfd91fc6",
+      "content_type": "text/html"
+    },
+    {
+      "path": "avis-legal.html",
+      "source_url": "https://albertguilemany.com/avis-legal.html",
+      "resolved_url": "https://albertguilemany.com/avis-legal.html",
+      "bytes": 12996,
+      "sha256": "0b7a91e7d467dfe140aed9df548cabdab9829dde03d82092ed4228676d4a6f88",
+      "content_type": "text/html"
+    },
+    {
+      "path": "diagnosi-digital.html",
+      "source_url": "https://albertguilemany.com/diagnosi-digital.html",
+      "resolved_url": "https://albertguilemany.com/diagnosi-digital.html",
+      "bytes": 21217,
+      "sha256": "aeb266882b9e1243feeae6eadb1dab049e03b4cbeacd97bf4115eb2d332fdf0c",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/ai-act-express-en.html",
+      "source_url": "https://albertguilemany.com/en/ai-act-express-en.html",
+      "resolved_url": "https://albertguilemany.com/en/ai-act-express-en.html",
+      "bytes": 23650,
+      "sha256": "de82925127a4ad4f4525a2367715bc05c146c3096bb6de7d6e4cbec9da00cab8",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/artificial-intelligence-en.html",
+      "source_url": "https://albertguilemany.com/en/artificial-intelligence-en.html",
+      "resolved_url": "https://albertguilemany.com/en/artificial-intelligence-en.html",
+      "bytes": 22240,
+      "sha256": "0159a955ce969fd027f2ab4ade1627e588ae3a17a48ace955115464d29fbc6ec",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/business-training-en.html",
+      "source_url": "https://albertguilemany.com/en/business-training-en.html",
+      "resolved_url": "https://albertguilemany.com/en/business-training-en.html",
+      "bytes": 22014,
+      "sha256": "b3f7e4b698895422c8810d6f00e2fe18802ad28091380b0141026dc95b9dce26",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/cookie-policy.html",
+      "source_url": "https://albertguilemany.com/en/cookie-policy.html",
+      "resolved_url": "https://albertguilemany.com/en/cookie-policy.html",
+      "bytes": 10514,
+      "sha256": "42d533987e6b769c38dcaaf00e17cc561b75b52841506e73d4886a690f6dc63d",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/digital-diagnosis-en.html",
+      "source_url": "https://albertguilemany.com/en/digital-diagnosis-en.html",
+      "resolved_url": "https://albertguilemany.com/en/digital-diagnosis-en.html",
+      "bytes": 21711,
+      "sha256": "a93c94c30b440b2865947bdb9f83b5a98810b21479d853e33ea749cfb5c2cc32",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/digital-roadmap-en.html",
+      "source_url": "https://albertguilemany.com/en/digital-roadmap-en.html",
+      "resolved_url": "https://albertguilemany.com/en/digital-roadmap-en.html",
+      "bytes": 22016,
+      "sha256": "89f0dba983025a2341853d421c27dfe28ad91ec2f16d768a7797a036e32aee1b",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/gracies.html",
+      "source_url": "https://albertguilemany.com/en/gracies.html",
+      "resolved_url": "https://albertguilemany.com/en/gracies.html",
+      "bytes": 7969,
+      "sha256": "ba2c017122d07c1fc29706020fda690fb298687277dbb487bce3621e7821110c",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/index.html",
+      "source_url": "https://albertguilemany.com/en/",
+      "resolved_url": "https://albertguilemany.com/en/",
+      "bytes": 35041,
+      "sha256": "74efc602a65a31ab34a0c32ae4567025936cec32d2a7d6bd48f9098f1f3dbba9",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/legal-notice.html",
+      "source_url": "https://albertguilemany.com/en/legal-notice.html",
+      "resolved_url": "https://albertguilemany.com/en/legal-notice.html",
+      "bytes": 11353,
+      "sha256": "39143bf4a06fdd948854bc77a048da3cabd76aa2f06d714ab592d16a29c43cdd",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/operational-optimization-en.html",
+      "source_url": "https://albertguilemany.com/en/operational-optimization-en.html",
+      "resolved_url": "https://albertguilemany.com/en/operational-optimization-en.html",
+      "bytes": 21831,
+      "sha256": "663f929078e99f9ca314faaef7b16f069fb982087ee23ff002149531bc13b3f0",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/privacy-policy.html",
+      "source_url": "https://albertguilemany.com/en/privacy-policy.html",
+      "resolved_url": "https://albertguilemany.com/en/privacy-policy.html",
+      "bytes": 11827,
+      "sha256": "bdb2f93235b3278268a61b1a4520e9a60d0e9cc7c32d95095c92151ef1129e66",
+      "content_type": "text/html"
+    },
+    {
+      "path": "en/process-automation-en.html",
+      "source_url": "https://albertguilemany.com/en/process-automation-en.html",
+      "resolved_url": "https://albertguilemany.com/en/process-automation-en.html",
+      "bytes": 21813,
+      "sha256": "f6f6c3bf6fc4067af9560e18796b6c882eab0f6e1b6f3530c8908778c1876a55",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/ai-act-express-es.html",
+      "source_url": "https://albertguilemany.com/es/ai-act-express-es.html",
+      "resolved_url": "https://albertguilemany.com/es/ai-act-express-es.html",
+      "bytes": 21746,
+      "sha256": "cd74dea8288274c45eae9a1372abb37c91094044ab80c7264ec856df971c8311",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/automatitzacio-processos-es.html",
+      "source_url": "https://albertguilemany.com/es/automatitzacio-processos-es.html",
+      "resolved_url": "https://albertguilemany.com/es/automatitzacio-processos-es.html",
+      "bytes": 16224,
+      "sha256": "962c16b6196ff4d51d94ab69a6aae50f2d56c4aae0162e50f58992a188214a0f",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/avis-legal.html",
+      "source_url": "https://albertguilemany.com/es/avis-legal.html",
+      "resolved_url": "https://albertguilemany.com/es/avis-legal.html",
+      "bytes": 14344,
+      "sha256": "503f06ee5ffc966ad6722cb8c8238b993b6012c9f7388d21faad99b5858d941f",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/diagnosi-digital-es.html",
+      "source_url": "https://albertguilemany.com/es/diagnosi-digital-es.html",
+      "resolved_url": "https://albertguilemany.com/es/diagnosi-digital-es.html",
+      "bytes": 15774,
+      "sha256": "42a8c51665f232ff88935a3dff459d4d6175ce33335e030992ebf2a79f19d603",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/formacio-empreses-es.html",
+      "source_url": "https://albertguilemany.com/es/formacio-empreses-es.html",
+      "resolved_url": "https://albertguilemany.com/es/formacio-empreses-es.html",
+      "bytes": 15812,
+      "sha256": "8bc3e2bcee6de8072a23b1b3fe5214560b61c4a2b5b5d2553cffb2c82198a7f2",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/gracies.html",
+      "source_url": "https://albertguilemany.com/es/gracies.html",
+      "resolved_url": "https://albertguilemany.com/es/gracies.html",
+      "bytes": 8059,
+      "sha256": "acddb46b892707d641cee1693958cb3ddd7e542aa2b3622f38d143dcbc2e5e03",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/index.html",
+      "source_url": "https://albertguilemany.com/es/",
+      "resolved_url": "https://albertguilemany.com/es/",
+      "bytes": 32752,
+      "sha256": "c14d4c82162cf878732ebfaeb7e54b686fac360feb76fd34a155189790e50f70",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/intelligencia-artificial-es.html",
+      "source_url": "https://albertguilemany.com/es/intelligencia-artificial-es.html",
+      "resolved_url": "https://albertguilemany.com/es/intelligencia-artificial-es.html",
+      "bytes": 16298,
+      "sha256": "268ebfcf06f3b05fc3f448150b15d5611955ae14dd95470cdf01cf90d4af748e",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/optimitzacio-operativa-es.html",
+      "source_url": "https://albertguilemany.com/es/optimitzacio-operativa-es.html",
+      "resolved_url": "https://albertguilemany.com/es/optimitzacio-operativa-es.html",
+      "bytes": 15718,
+      "sha256": "2020ed8a2da535fe11857599d76c4aab8bfb54eb1057c76354ca242daf58e439",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/politica-cookies.html",
+      "source_url": "https://albertguilemany.com/es/politica-cookies.html",
+      "resolved_url": "https://albertguilemany.com/es/politica-cookies.html",
+      "bytes": 13731,
+      "sha256": "788d12265f4eb84c5a150d85e0afa9523a3867e60ec65c944245a3be23afa7db",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/politica-privacitat.html",
+      "source_url": "https://albertguilemany.com/es/politica-privacitat.html",
+      "resolved_url": "https://albertguilemany.com/es/politica-privacitat.html",
+      "bytes": 15041,
+      "sha256": "0662b222c0b63a857b4c59ab6ae09a79b5870c222dbcb75dd5624b106768db47",
+      "content_type": "text/html"
+    },
+    {
+      "path": "es/roadmap-transformacio-digital-es.html",
+      "source_url": "https://albertguilemany.com/es/roadmap-transformacio-digital-es.html",
+      "resolved_url": "https://albertguilemany.com/es/roadmap-transformacio-digital-es.html",
+      "bytes": 15767,
+      "sha256": "007f3c17cbb227b99ce1a3594883885745fd286414e380d60c25ddb0c8cfa1fd",
+      "content_type": "text/html"
+    },
+    {
+      "path": "favicon-16x16.png",
+      "source_url": "https://albertguilemany.com/favicon-16x16.png?v=3",
+      "resolved_url": "https://albertguilemany.com/favicon-16x16.png?v=3",
+      "bytes": 924,
+      "sha256": "92bab37649d6f095a2af7cfcec614dffbb947b46019788f5130cc28504726584",
+      "content_type": "image/png"
+    },
+    {
+      "path": "favicon-192.png",
+      "source_url": "https://albertguilemany.com/favicon-192.png",
+      "resolved_url": "https://albertguilemany.com/favicon-192.png",
+      "bytes": 16802,
+      "sha256": "13daeede5ec2e0805ff38c9ad5e4e73ac2a06ecb2b5c23eab13c9ec9af62ca29",
+      "content_type": "image/png"
+    },
+    {
+      "path": "favicon-32x32.png",
+      "source_url": "https://albertguilemany.com/favicon-32x32.png?v=3",
+      "resolved_url": "https://albertguilemany.com/favicon-32x32.png?v=3",
+      "bytes": 1215,
+      "sha256": "cd467180256e28ad44b5167a571e7fc18410f33ad31d4c5511c9edb34ab971e8",
+      "content_type": "image/png"
+    },
+    {
+      "path": "favicon.ico",
+      "source_url": "https://albertguilemany.com/favicon.ico?v=3",
+      "resolved_url": "https://albertguilemany.com/favicon.ico?v=3",
+      "bytes": 536,
+      "sha256": "94efa187493ecdbf7d15b59016eb95e27dd2b20e021098cc74e89c7dc1f96028",
+      "content_type": "image/vnd.microsoft.icon"
+    },
+    {
+      "path": "formacio-empreses.html",
+      "source_url": "https://albertguilemany.com/formacio-empreses.html",
+      "resolved_url": "https://albertguilemany.com/formacio-empreses.html",
+      "bytes": 17963,
+      "sha256": "41e82087a604ec766a8f6fb1d79f23c645c2f4d747932c537293b9fab25fd603",
+      "content_type": "text/html"
+    },
+    {
+      "path": "gracies.html",
+      "source_url": "https://albertguilemany.com/gracies.html",
+      "resolved_url": "https://albertguilemany.com/gracies.html",
+      "bytes": 8008,
+      "sha256": "ab9081734a33dac4e2c8263a84cdddc8e8beec74e328321ead8776b8cf45e89f",
+      "content_type": "text/html"
+    },
+    {
+      "path": "icon-512.png",
+      "source_url": "https://albertguilemany.com/icon-512.png",
+      "resolved_url": "https://albertguilemany.com/icon-512.png",
+      "bytes": 25178,
+      "sha256": "fa1b02f4a776dd2c9c073a00a81a3fc87ef6fc6f5098d8ee1cba781e94f92fe3",
+      "content_type": "image/png"
+    },
+    {
+      "path": "images/hero-automatitzacio.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-automatitzacio.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-automatitzacio.jpg",
+      "bytes": 73844,
+      "sha256": "0b9b87e78bf13e9d58c1e019cfe681fe3c6affb31221c551fe60b5d4e66e3e24",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/hero-diagnosi.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-diagnosi.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-diagnosi.jpg",
+      "bytes": 54698,
+      "sha256": "84d394c56ed94122409445cd216b2f82e5f79ec52a35cd97fd1a2ed76be3f032",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/hero-formacio.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-formacio.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-formacio.jpg",
+      "bytes": 72012,
+      "sha256": "ffe67750f9468410691779983d3238d1f30c943a46a3ea9fbc1de2fdaac63c1e",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/hero-ia.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-ia.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-ia.jpg",
+      "bytes": 22828,
+      "sha256": "ade17714b421ff093beae845707cb137525c4a211dd662f7bfd6053f87f3ba32",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/hero-optimitzacio.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-optimitzacio.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-optimitzacio.jpg",
+      "bytes": 73096,
+      "sha256": "09541c20d2a7d7894d9bf890234b41f135dbf72414b2da03aced737befdaa926",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/hero-roadmap.jpg",
+      "source_url": "https://albertguilemany.com/images/hero-roadmap.jpg",
+      "resolved_url": "https://albertguilemany.com/images/hero-roadmap.jpg",
+      "bytes": 103737,
+      "sha256": "332dbea279fff6e435a7f81aa41a960d1d92cfe51a14862456c2519909bd3786",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/logo-ag.png",
+      "source_url": "https://albertguilemany.com/images/logo-ag.png",
+      "resolved_url": "https://albertguilemany.com/images/logo-ag.png",
+      "bytes": 187964,
+      "sha256": "36186ab40d81d8035de4bcc5b3291c5d198119aeb699d6c8c0639ddacaf85cb3",
+      "content_type": "image/png"
+    },
+    {
+      "path": "images/og-cover.png",
+      "source_url": "https://albertguilemany.com/images/og-cover.png",
+      "resolved_url": "https://albertguilemany.com/images/og-cover.png",
+      "bytes": 109760,
+      "sha256": "a6c8fb9a85e0b0f5a58f33c38186af8e75dfa9e28daf58b03d7b8a41862f0edf",
+      "content_type": "image/png"
+    },
+    {
+      "path": "images/service-1.jpg",
+      "source_url": "https://albertguilemany.com/images/service-1.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-1.jpg",
+      "bytes": 46679,
+      "sha256": "70d45711599af011e19a1ae27b0a482984f08a71b32ec17edf695c62f1e47e99",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/service-2.jpg",
+      "source_url": "https://albertguilemany.com/images/service-2.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-2.jpg",
+      "bytes": 57560,
+      "sha256": "eec028bf808569b6529cb7b238c182f1c809535eb7fd5c445f1403f2c0effab7",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/service-3.jpg",
+      "source_url": "https://albertguilemany.com/images/service-3.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-3.jpg",
+      "bytes": 27633,
+      "sha256": "a031263f14d038957381fd9fde37795812b34bd83f174f22a911038d19eb27ad",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/service-4.jpg",
+      "source_url": "https://albertguilemany.com/images/service-4.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-4.jpg",
+      "bytes": 61783,
+      "sha256": "735379cbc4f95476face5e1518c8fcdf29f7827f4983d6fa08b5b28f29b1ac93",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/service-5.jpg",
+      "source_url": "https://albertguilemany.com/images/service-5.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-5.jpg",
+      "bytes": 55142,
+      "sha256": "f2d541612099bcd2b7b1347e4fa36dfb16e55907ea0804ab5728cefec545207e",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "images/service-6.jpg",
+      "source_url": "https://albertguilemany.com/images/service-6.jpg",
+      "resolved_url": "https://albertguilemany.com/images/service-6.jpg",
+      "bytes": 50358,
+      "sha256": "4c39a1ce6a5c8957a409aa5788dcbb82361f8681c424beb679e01f6dbc122ae0",
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "index.html",
+      "source_url": "https://albertguilemany.com/",
+      "resolved_url": "https://albertguilemany.com/",
+      "bytes": 39808,
+      "sha256": "bcca4cfaac064ba46f39688c7303c1a5dfeb6368a566c2b47895f6514ac5982b",
+      "content_type": "text/html"
+    },
+    {
+      "path": "intelligencia-artificial.html",
+      "source_url": "https://albertguilemany.com/intelligencia-artificial.html",
+      "resolved_url": "https://albertguilemany.com/intelligencia-artificial.html",
+      "bytes": 20238,
+      "sha256": "a023facceb19c8a2fc755e6c8dee2d5d5ffc6ed942096bc32faaa0cad02928c6",
+      "content_type": "text/html"
+    },
+    {
+      "path": "optimitzacio-operativa.html",
+      "source_url": "https://albertguilemany.com/optimitzacio-operativa.html",
+      "resolved_url": "https://albertguilemany.com/optimitzacio-operativa.html",
+      "bytes": 17802,
+      "sha256": "af19aaa6e4356c09d515f0515522587d82d35769f9eb2bb20f4927d1043349f0",
+      "content_type": "text/html"
+    },
+    {
+      "path": "politica-cookies.html",
+      "source_url": "https://albertguilemany.com/politica-cookies.html",
+      "resolved_url": "https://albertguilemany.com/politica-cookies.html",
+      "bytes": 12277,
+      "sha256": "bb23b2169eeb887caff703a35f112da6bdf2e33f872792de6302da34829a1693",
+      "content_type": "text/html"
+    },
+    {
+      "path": "politica-privacitat.html",
+      "source_url": "https://albertguilemany.com/politica-privacitat.html",
+      "resolved_url": "https://albertguilemany.com/politica-privacitat.html",
+      "bytes": 13431,
+      "sha256": "8e52d1afdac9446fab7e2a18d9cf4e6b72b2b04da94950e3cd72312024fba1c7",
+      "content_type": "text/html"
+    },
+    {
+      "path": "roadmap-transformacio-digital.html",
+      "source_url": "https://albertguilemany.com/roadmap-transformacio-digital.html",
+      "resolved_url": "https://albertguilemany.com/roadmap-transformacio-digital.html",
+      "bytes": 18173,
+      "sha256": "c389b49796de50f7ada784492689dc5b92b86ee5a8301ccd335bf7932dff9b9a",
+      "content_type": "text/html"
+    },
+    {
+      "path": "robots.txt",
+      "source_url": "https://albertguilemany.com/robots.txt",
+      "resolved_url": "https://albertguilemany.com/robots.txt",
+      "bytes": 805,
+      "sha256": "876d95411098bed4e4fc97d101529f78c681e16dd1432c79ec70c18ecdbca20a",
+      "content_type": "text/plain"
+    },
+    {
+      "path": "script.js",
+      "source_url": "https://albertguilemany.com/script.js",
+      "resolved_url": "https://albertguilemany.com/script.js",
+      "bytes": 4773,
+      "sha256": "5c834cd0235b91c65d7011176f6a4cc95182e1818cc1c77c0e9d8b8c984fd5c9",
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "site.webmanifest",
+      "source_url": "https://albertguilemany.com/site.webmanifest?v=3",
+      "resolved_url": "https://albertguilemany.com/site.webmanifest?v=3",
+      "bytes": 305,
+      "sha256": "2c8330da7588e3db5a392a211462414ff2ce6c403b28c10fd2809cd6b0a61107",
+      "content_type": "application/manifest+json"
+    },
+    {
+      "path": "sitemap.xml",
+      "source_url": "https://albertguilemany.com/sitemap.xml",
+      "resolved_url": "https://albertguilemany.com/sitemap.xml",
+      "bytes": 8646,
+      "sha256": "79b522174b666379b6247b8db30a1be88efdae4bfae7ffcb2f306043d897ce1b",
+      "content_type": "text/xml"
+    },
+    {
+      "path": "style.css",
+      "source_url": "https://albertguilemany.com/style.css?v=3",
+      "resolved_url": "https://albertguilemany.com/style.css?v=3",
+      "bytes": 15837,
+      "sha256": "89b89c75a2bd396b4b4d966473475bc759474f116a6e9e6567f2a5da40f063b7",
+      "content_type": "text/css"
+    }
+  ],
+  "external_links": [
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+    "https://fonts.gstatic.com",
+    "https://policies.google.com/privacy",
+    "https://support.apple.com/ca-es/guide/safari/sfri11471/mac",
+    "https://support.apple.com/es-es/guide/safari/sfri11471/mac",
+    "https://support.apple.com/guide/safari/sfri11471/mac",
+    "https://support.google.com/chrome/answer/95647",
+    "https://support.microsoft.com/ca-es/windows/eliminar-i-gestionar-les-galetes-168dab11-0753-043d-7c16-ede5947fc64d",
+    "https://support.microsoft.com/en-us/windows/delete-and-manage-cookies",
+    "https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d",
+    "https://support.mozilla.org/ca/kb/activa-i-desactiva-les-galetes",
+    "https://support.mozilla.org/en-US/kb/enable-and-disable-cookies",
+    "https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies",
+    "https://www.aepd.es",
+    "https://www.instagram.com/albertguilemany/",
+    "https://www.linkedin.com/in/albertguilemany/"
+  ],
+  "validation": {
+    "public_files": 61,
+    "html_pages": 36,
+    "unique_inline_scripts_checked": 0,
+    "missing_same_origin_links": 0,
+    "sha256_matches": 61,
+    "external_script_syntax": "passed"
+  },
+  "previous_github_commit": "3b86bc93906084b37ae20e365fd3acdb03e73851"
+}

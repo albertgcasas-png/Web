@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /gracies.html
+Disallow: /es/gracies.html
+Disallow: /en/gracies.html
+
+# Pàgines ES antigues (sense sufix) — ara redireccionades
+Disallow: /es/diagnosi-digital.html
+Disallow: /es/automatitzacio-processos.html
+Disallow: /es/intelligencia-artificial.html
+Disallow: /es/optimitzacio-operativa.html
+Disallow: /es/formacio-empreses.html
+Disallow: /es/roadmap-transformacio-digital.html
+Disallow: /es/ai-act-express.html
+
+# Pàgines EN antigues (sense sufix)
+Disallow: /en/digital-diagnosis.html
+Disallow: /en/process-automation.html
+Disallow: /en/artificial-intelligence.html
+Disallow: /en/operational-optimization.html
+Disallow: /en/business-training.html
+Disallow: /en/digital-roadmap.html
+Disallow: /en/ai-act-express.html
+
+Sitemap: https://albertguilemany.com/sitemap.xml

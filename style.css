@@ -329,3 +329,5 @@ input:focus, textarea:focus { border-color: rgba(17,18,20,.35); }
   .ai-strip { flex-direction: column; align-items: flex-start; }
   .ai-strip-actions { align-items: flex-start; }
 }
+
+@media (max-width: 600px) { .timeline { grid-template-columns: 1fr !important; } }

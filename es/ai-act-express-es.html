@@ -18,7 +18,7 @@
   <meta property="og:locale" content="es_ES">
   <link rel="icon" type="image/x-icon" href="https://albertguilemany.com/favicon.ico?v=3">
   <link rel="apple-touch-icon" sizes="180x180" href="https://albertguilemany.com/apple-touch-icon.png?v=3">
-  <link rel="stylesheet" href="https://albertguilemany.com/style.css?v=3">
+  <link rel="stylesheet" href="https://albertguilemany.com/style.css?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
     .rights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px;}
     .right-item{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:.88rem;}
     .right-item strong{display:block;color:var(--text);margin-bottom:3px;}
-    .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px;}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px;}
     .timeline-item{background:#fff;padding:20px 18px;}
     .timeline-date{font-size:.78rem;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
     .timeline-title{font-weight:700;font-size:.95rem;margin-bottom:6px;}
@@ -68,7 +68,7 @@
     .faq summary{cursor:pointer;font-weight:700;list-style:none;}
     .faq summary::-webkit-details-marker{display:none;}
     .faq details[open]{background:rgba(17,18,20,.02);}
-    @media(max-width:980px){.timeline{grid-template-columns:1fr;}}
+    @media(max-width:980px){.timeline{grid-template-columns:repeat(2,1fr);}}
     @media(max-width:720px){.deliverable-grid{grid-template-columns:1fr;}.process-steps{grid-template-columns:1fr;}.rights-grid{grid-template-columns:1fr;}}
   </style>
 </head>
@@ -106,28 +106,33 @@
     <section style="padding:50px 0 40px;position:relative;overflow:hidden;">
       <div class="container">
         <nav class="breadcrumb"><a href="https://albertguilemany.com/es/">Inicio</a> › <a href="https://albertguilemany.com/es/#servicios">Servicios</a> › <strong>AI Act Express</strong></nav>
-        <div class="urgency-badge">En vigor desde el 1 ago. 2024 · Plazo general: 2 ago. 2026 · Formación del personal: obligatorio desde el 2 de febrero de 2025</div>
+        <div class="urgency-badge">Reglamento (UE) 2024/1689 · En vigor desde el 1 de agosto de 2024 · Aplicación general desde el 2 de agosto de 2026</div>
         <h1>¿Tu empresa utiliza IA? El AI Act ya te afecta</h1>
-        <p class="lead">El Reglamento Europeo de Inteligencia Artificial obliga a todas las empresas que utilizan herramientas de IA a documentar su uso, evaluar los riesgos y formar al personal. Ayudamos a pymes y autónomos a cumplir la normativa de forma práctica y en cinco días hábiles.</p>
+        <p class="lead">Si tu empresa usa herramientas de IA, el Reglamento Europeo de Inteligencia Artificial puede exigirte cosas distintas según el uso y el nivel de riesgo: desde formar al personal hasta informar a los clientes o documentar su uso. Ayudamos a pymes y autónomos a cumplir la normativa de forma práctica y en cinco días hábiles.</p>
         <div class="hero-actions" style="margin-top:24px;">
           <a class="btn btn-primary" href="#contacto" style="background:#dc2626;border-color:#dc2626;">Iniciar el proceso</a>
           <a class="btn btn-ghost" href="#que-incluye">Ver qué incluye</a>
         </div>
                         <div class="timeline">
           <div class="timeline-item active">
-            <div class="timeline-date">1 Agosto 2024 · Vigente</div>
-            <div class="timeline-title">Entrada en vigor del Reglamento</div>
-            <p class="timeline-desc">El Reglamento (UE) 2024/1689 entra en vigor. Comienzan todos los plazos y obligaciones.</p>
+            <div class="timeline-date">1 de agosto de 2024</div>
+            <div class="timeline-title">Entrada en vigor</div>
+            <p class="timeline-desc">El Reglamento (UE) 2024/1689 entra en vigor y las obligaciones se aplican de forma progresiva.</p>
           </div>
           <div class="timeline-item active">
-            <div class="timeline-date">2 Febrero 2025 · Vigente ahora</div>
-            <div class="timeline-title">Formación del personal obligatoria</div>
-            <p class="timeline-desc">Todo el personal que utiliza sistemas de IA debe recibir formación sobre capacidades, limitaciones y riesgos.</p>
+            <div class="timeline-date">2 de febrero de 2025</div>
+            <div class="timeline-title">Prácticas prohibidas y alfabetización en IA</div>
+            <p class="timeline-desc">Quedan prohibidos determinados usos de la IA y el artículo 4 pide que el personal que usa IA tenga un nivel suficiente de conocimiento.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2 Agosto 2026</div>
-            <div class="timeline-title">Obligación general para empresas</div>
-            <p class="timeline-desc">Todas las empresas deben tener documentado el uso de IA, la evaluación de riesgos y las medidas aplicadas. Multas de hasta 35M €.</p>
+          <div class="timeline-item active">
+            <div class="timeline-date">2 de agosto de 2025</div>
+            <div class="timeline-title">Modelos de IA de uso general</div>
+            <p class="timeline-desc">Obligaciones para los proveedores de modelos como los que hay detrás de ChatGPT o Copilot, y régimen de sanciones.</p>
+          </div>
+          <div class="timeline-item active">
+            <div class="timeline-date">2 de agosto de 2026</div>
+            <div class="timeline-title">Aplicación general</div>
+            <p class="timeline-desc">Se aplica la mayor parte del Reglamento, incluidas las obligaciones de transparencia (por ejemplo, avisar de que alguien habla con un chatbot). Algunos plazos de alto riesgo llegan hasta 2027 y la Comisión Europea propuso aplazarlos en noviembre de 2025.</p>
           </div>
         </div>
       </div>
@@ -161,11 +166,11 @@
       <div class="container">
         <div class="section-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Lo que suele preguntar todo el mundo sobre el AI Act</h2></div>
         <div class="faq">
-          <details><summary>¿Qué empresas están obligadas a cumplir el AI Act?</summary><p>Todas las empresas que operan en la UE y que utilizan sistemas de IA, independientemente de su tamaño. Las pymes que utilizan herramientas de uso general (ChatGPT, Copilot, etc.) entran en la categoría de riesgo bajo o medio, con requisitos de documentación y formación.</p></details>
+          <details><summary>¿Qué empresas están obligadas a cumplir el AI Act?</summary><p>Todas las empresas que operan en la UE y que utilizan sistemas de IA, independientemente de su tamaño. Las pymes que utilizan herramientas de uso general (ChatGPT, Copilot, etc.) suelen quedar en las categorías de riesgo limitado o mínimo, donde lo más habitual es la formación del personal y, en algunos casos, obligaciones de transparencia.</p></details>
           <details><summary>¿Qué sanciones prevé el Reglamento?</summary><p>Las sanciones van desde los 7,5 millones de euros (o el 1,5% de la facturación) por infracciones leves, hasta los 35 millones (o el 7% de la facturación) por infracciones graves. Para pymes, las autoridades deben tener en cuenta la capacidad económica de la empresa.</p></details>
-          <details><summary>¿La formación del personal ya es obligatoria?</summary><p>Sí. Desde agosto de 2025, las empresas están obligadas a garantizar que todo el personal que utiliza sistemas de IA tenga un nivel suficiente de concienciación sobre sus capacidades, limitaciones y riesgos.</p></details>
+          <details><summary>¿La formación del personal ya es obligatoria?</summary><p>Sí. Desde el 2 de febrero de 2025, el artículo 4 pide a las empresas que garanticen que todo el personal que utiliza sistemas de IA tenga un nivel suficiente de concienciación sobre sus capacidades, limitaciones y riesgos.</p></details>
           <details><summary>¿Hay que revisar la documentación periódicamente?</summary><p>Sí, especialmente cuando se incorporan herramientas nuevas o cuando cambia significativamente el uso de las existentes. Recomendamos una revisión anual.</p></details>
-          <details><summary>¿El servicio cubre sistemas de IA de alto riesgo?</summary><p>El servicio AI Act Express cubre las obligaciones para sistemas de riesgo bajo y medio. Los sistemas de alto riesgo requieren un proceso de evaluación de conformidad más exhaustivo que gestionamos por separado.</p></details>
+          <details><summary>¿El servicio cubre sistemas de IA de alto riesgo?</summary><p>El servicio AI Act Express es documental y formativo, pensado para usos de riesgo limitado o mínimo, que es el caso de la gran mayoría de pymes. Los sistemas de alto riesgo requieren un proceso más exhaustivo y la revisión de un abogado especializado; te orientamos sobre los pasos.</p></details>
           <details><summary>¿Cuánto cuesta el servicio?</summary><p>El precio es fijo y se acuerda por escrito antes de empezar. Varía según el número de sistemas de IA y el tamaño del equipo. Pedid información y enviamos presupuesto en 24 horas.</p></details>
         </div>
       </div>
@@ -183,7 +188,9 @@
               <label><span>Teléfono</span><input id="phone" name="tel" type="tel" autocomplete="tel" placeholder="+34 600 000 000"></label>
               <label class="full"><span>¿Qué herramientas de IA utiliza tu empresa? *</span><textarea id="message" name="message" rows="5" required placeholder="Describid las herramientas que utilizáis: ChatGPT, Copilot, chatbots, automatizaciones... y cuántos sois en el equipo."></textarea></label>
               <button type="submit" class="btn-primary" style="background:#dc2626;border-color:#dc2626;">Pedir presupuesto →</button>
-              <div class="microtrust-block full"><p class="microtrust">Presupuesto en 24h · Precio fijo · Sin compromiso</p></div>
+              <div class="microtrust-block full"><p class="microtrust">Presupuesto en 24h · Precio fijo · Sin compromiso</p>
+<p class="form-privacy">Responsable: Albert Guilemany. Usaré tus datos solo para responder a tu consulta. Más información en la <a href="https://albertguilemany.com/es/politica-privacitat.html">Política de privacidad</a>.</p>
+<p class="form-error" id="formError" role="alert" hidden></p></div>
             </form>
           </div>
           <div class="contact-copy">
@@ -194,7 +201,7 @@
                 <div><dt>Email</dt><dd><a id="contact-email" href="mailto:info@albertguilemany.com">info@albertguilemany.com</a></dd></div>
                 <div><dt>Teléfono</dt><dd><a href="tel:+34673343827">+34 673 343 827</a></dd></div>
               </dl>
-              <div class="contact-note"><p>Primera consulta gratuita. Nos ponemos en contacto en 24h.</p></div>
+              <div class="contact-note"><p>Primera consulta gratuita. Te respondo en menos de 24h.</p></div>
             </div>
           </div>
         </div>
@@ -209,6 +216,6 @@
     </div>
   </footer>
   <div class="sticky-cta"><a class="btn btn-primary" href="#contacto" style="background:#dc2626;border-color:#dc2626;">Cumplir con el AI Act →</a></div>
-  <script src="https://albertguilemany.com/script.js"></script>
+  <script src="https://albertguilemany.com/script.js?v=4"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://albertguilemany.com/favicon-32x32.png?v=3">
   <link rel="apple-touch-icon" sizes="180x180" href="https://albertguilemany.com/apple-touch-icon.png?v=3">
   <link rel="manifest" href="https://albertguilemany.com/site.webmanifest?v=3">
-  <link rel="stylesheet" href="https://albertguilemany.com/style.css?v=3">
+  <link rel="stylesheet" href="https://albertguilemany.com/style.css?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
 
     /* Timeline de dates */
     .timeline {
-      display:grid; grid-template-columns:repeat(3,1fr);
+      display:grid; grid-template-columns:repeat(4,1fr);
       gap:1px; background:var(--line);
       border:1px solid var(--line); border-radius:16px; overflow:hidden;
       margin-top:28px;
@@ -116,7 +116,7 @@
     .cta-urgent .btn-red { background:#dc2626; color:#fff; border-color:#dc2626; font-size:1rem; padding:14px 28px; }
     .cta-urgent .btn-red:hover { box-shadow:0 4px 14px rgba(220,38,38,.35); }
 
-    @media (max-width:980px) { .timeline { grid-template-columns:1fr; } }
+    @media (max-width:980px) { .timeline { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:720px) {
       .deliverable-grid { grid-template-columns:1fr; }
       .process-steps { grid-template-columns:1fr; }
@@ -175,9 +175,9 @@
         <nav class="breadcrumb" aria-label="Ruta">
           <a href="https://albertguilemany.com/">Inici</a> › <a href="https://albertguilemany.com/#serveis">Serveis</a> › <strong>AI Act Express</strong>
         </nav>
-        <div class="urgency-badge">En vigor des de l'1 agost 2024 · Termini general: 2 agost 2026 · Formació del personal: obligatori des del 2 de febrer de 2025</div>
+        <div class="urgency-badge">Reglament (UE) 2024/1689 · En vigor des de l'1 d'agost de 2024 · Aplicació general des del 2 d'agost de 2026</div>
         <h1>La teva empresa utilitza IA? L'AI Act ja t'afecta</h1>
-        <p class="lead">El Reglament Europeu d'Intel·ligència Artificial obliga totes les empreses que utilitzen eines d'IA a documentar-ne l'ús, avaluar els riscos i formar el personal. Ajudem pimes i autònoms a complir la normativa de forma pràctica, sense burocràcia innecessària i en cinc dies hàbils.</p>
+        <p class="lead">Si la teva empresa fa servir eines d'IA, el Reglament Europeu d'Intel·ligència Artificial et pot exigir coses diferents segons l'ús i el nivell de risc: des de formar el personal fins a informar els clients o documentar-ne l'ús. Ajudem pimes i autònoms a complir la normativa de forma pràctica, sense burocràcia innecessària i en cinc dies hàbils.</p>
         <div class="hero-actions" style="margin-top:24px;">
           <a class="btn btn-primary" href="#contacte" style="background:#dc2626;border-color:#dc2626;">Iniciar el procés</a>
           <a class="btn btn-ghost" href="#que-inclou">Veure què inclou</a>
@@ -186,19 +186,24 @@
         <!-- Timeline de dates clau -->
                         <div class="timeline">
           <div class="timeline-item active">
-            <div class="timeline-date">1 Agost 2024 · Vigent</div>
-            <div class="timeline-title">Entrada en vigor del Reglament</div>
-            <p class="timeline-desc">El Reglament (UE) 2024/1689 entra en vigor. Comencen tots els terminis i obligacions.</p>
+            <div class="timeline-date">1 d'agost de 2024</div>
+            <div class="timeline-title">Entrada en vigor</div>
+            <p class="timeline-desc">El Reglament (UE) 2024/1689 entra en vigor i les obligacions s'apliquen de forma progressiva.</p>
           </div>
           <div class="timeline-item active">
-            <div class="timeline-date">2 Febrer 2025 · Vigent ara</div>
-            <div class="timeline-title">Formació del personal obligatòria</div>
-            <p class="timeline-desc">Tot el personal que utilitza sistemes d'IA ha de rebre formació sobre capacitats, limitacions i riscos.</p>
+            <div class="timeline-date">2 de febrer de 2025</div>
+            <div class="timeline-title">Pràctiques prohibides i alfabetització en IA</div>
+            <p class="timeline-desc">Queden prohibits determinats usos de la IA i l'article 4 demana que el personal que fa servir IA tingui un nivell suficient de coneixement.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2 Agost 2026</div>
-            <div class="timeline-title">Obligació general per a empreses</div>
-            <p class="timeline-desc">Totes les empreses han de tenir documentat l'ús d'IA, l'avaluació de riscos i les mesures aplicades. Multes de fins a 35M €.</p>
+          <div class="timeline-item active">
+            <div class="timeline-date">2 d'agost de 2025</div>
+            <div class="timeline-title">Models d'IA d'ús general</div>
+            <p class="timeline-desc">Obligacions per als proveïdors de models com els que hi ha darrere de ChatGPT o Copilot, i règim de sancions.</p>
+          </div>
+          <div class="timeline-item active">
+            <div class="timeline-date">2 d'agost de 2026</div>
+            <div class="timeline-title">Aplicació general</div>
+            <p class="timeline-desc">S'aplica la major part del Reglament, incloses les obligacions de transparència (per exemple, avisar que algú parla amb un chatbot). Alguns terminis d'alt risc arriben fins al 2027 i la Comissió Europea en va proposar l'ajornament el novembre de 2025.</p>
           </div>
         </div>
       </div>
@@ -242,7 +247,7 @@
         <div class="faq">
           <details>
             <summary>Quines empreses estan obligades a complir l'AI Act?</summary>
-            <p>Totes les empreses que operen a la UE i que utilitzen sistemes d'IA estan subjectes al Reglament, independentment de la mida. Les obligacions varien en funció del nivell de risc dels sistemes que s'utilitzen: les pimes que utilitzen eines d'ús general (ChatGPT, Copilot, etc.) entren en la categoria de risc baix o mig, amb requisits de documentació i formació.</p>
+            <p>Totes les empreses que operen a la UE i que utilitzen sistemes d'IA estan subjectes al Reglament, independentment de la mida. Les obligacions varien en funció del nivell de risc dels sistemes que s'utilitzen: les pimes que utilitzen eines d'ús general (ChatGPT, Copilot, etc.) solen quedar en les categories de risc limitat o mínim, on el més habitual és la formació del personal i, en alguns casos, obligacions de transparència.</p>
           </details>
           <details>
             <summary>Quines sancions preveu el Reglament per a l'incompliment?</summary>
@@ -250,7 +255,7 @@
           </details>
           <details>
             <summary>La formació del personal ja és obligatòria?</summary>
-            <p>Sí. Des d'agost del 2025, les empreses estan obligades a garantir que tot el personal que utilitza sistemes d'IA tingui un nivell suficient de conscienciació sobre les capacitats, les limitacions i els riscos d'aquestes eines. La nostra sessió de formació cobreix exactament aquest requisit.</p>
+            <p>Sí. Des del 2 de febrer de 2025, l'article 4 demana a les empreses que garanteixin que tot el personal que utilitza sistemes d'IA tingui un nivell suficient de conscienciació sobre les capacitats, les limitacions i els riscos d'aquestes eines. La nostra sessió de formació cobreix exactament aquest requisit.</p>
           </details>
           <details>
             <summary>Hem de revisar la documentació periòdicament?</summary>
@@ -258,7 +263,7 @@
           </details>
           <details>
             <summary>El servei cobreix sistemes d'IA d'alt risc?</summary>
-            <p>El servei AI Act Express cobreix les obligacions per a sistemes de risc baix i mig, que és el cas de la gran majoria de pimes. Els sistemes d'alt risc (selecció de personal, sistemes crítics d'infraestructures, etc.) requereixen un procés d'avaluació de conformitat més exhaustiu que gestionem per separat.</p>
+            <p>El servei AI Act Express és documental i formatiu, pensat per a usos de risc limitat o mínim, que és el cas de la gran majoria de pimes. Els sistemes d'alt risc (selecció de personal, infraestructures crítiques, etc.) requereixen un procés més exhaustiu i la revisió d'un advocat especialitzat; t'orientem sobre els passos.</p>
           </details>
           <details>
             <summary>Quant costa el servei?</summary>
@@ -274,7 +279,7 @@
         <div class="section-head">
           <p class="eyebrow">Contacte</p>
           <h2>Posem en ordre el compliment de l'AI Act</h2>
-          <p>Explica'ns quines eines d'IA utilitza la teva empresa i t'enviem un pressupost fix en menys de 24 hores.</p>
+          <p>Explica'm quines eines d'IA utilitza la teva empresa i t'envio un pressupost fix en menys de 24 hores.</p>
         </div>
         <div class="contact-grid">
           <div class="contact-form">
@@ -292,6 +297,8 @@
               <button type="submit" class="btn-primary" style="background:#dc2626;border-color:#dc2626;">Demanar pressupost →</button>
               <div class="microtrust-block full">
                 <p class="microtrust">Pressupost en 24h · Preu fix · Sense compromís</p>
+<p class="form-privacy">Responsable: Albert Guilemany. Faré servir les teves dades només per respondre la teva consulta. Més informació a la <a href="https://albertguilemany.com/politica-privacitat.html">Política de privacitat</a>.</p>
+<p class="form-error" id="formError" role="alert" hidden></p>
               </div>
             </form>
           </div>
@@ -300,13 +307,13 @@
             <p class="microtrust" style="margin-bottom:18px;">Entrega en 5 dies hàbils. Preu fix acordat per escrit. La documentació queda en mans de l'empresa.</p>
             <div class="contact-card">
               <h3>Dades de contacte</h3>
-              <p class="small">O si prefereixes, escriu-nos directament:</p>
+              <p class="small">O si prefereixes, escriu-me directament:</p>
               <dl class="contact-list">
                 <div><dt>Email</dt><dd><a id="contact-email" href="mailto:info@albertguilemany.com">info@albertguilemany.com</a></dd></div>
                 <div><dt>Telèfon</dt><dd><a href="tel:+34673343827">+34 673 343 827</a></dd></div>
               </dl>
               <div class="contact-note">
-                <p>Primera consulta gratuïta. Ens posem en contacte en 24h.</p>
+                <p>Primera consulta gratuïta. Et responc en menys de 24h.</p>
               </div>
             </div>
           </div>
@@ -342,6 +349,6 @@
     <a class="btn btn-primary" href="#contacte" style="background:#dc2626;border-color:#dc2626;">Compleix l'AI Act →</a>
   </div>
 
-  <script src="https://albertguilemany.com/script.js"></script>
+  <script src="https://albertguilemany.com/script.js?v=4"></script>
 </body>
 </html>

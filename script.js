@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setHidden('referrer', document.referrer || '(direct)');
 
       const btn = form.querySelector('button[type="submit"]');
+      const btnLabel = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = '...'; }
 
       // Detectar idioma per redirigir al gracies correcte
@@ -92,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         es: 'No se ha podido enviar el mensaje. Escríbeme a info@albertguilemany.com o llama al +34 673 343 827.',
         en: "Your message couldn't be sent. Please email info@albertguilemany.com or call +34 673 343 827."
       };
-      const btnLabel = btn ? btn.textContent : '';
       const errorEl = document.getElementById('formError');
       if (errorEl) errorEl.hidden = true;
 
@@ -119,6 +119,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* 5) Selector d'idioma */
   initLangSelector();
+
+  /* 6) Mesura de conversions (analítica sense cookies).
+     No envia res fins que s'afegeixi el script del proveïdor (Plausible:
+     window.plausible; Umami: window.umami). */
+  const track = (name, props) => {
+    try {
+      if (typeof window.plausible === 'function') window.plausible(name, { props });
+      else if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, props);
+    } catch (_) { /* la mesura mai ha de trencar la web */ }
+  };
+  const page = window.location.pathname;
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.includes('calendly.com')) track('Reserva Calendly', { page });
+    else if (href.startsWith('tel:')) track('Clic telèfon', { page });
+    else if (href.startsWith('mailto:')) track('Clic email', { page });
+    else if (/diagnosi-digital|digital-diagnosis/.test(href) && !/diagnosi-digital|digital-diagnosis/.test(page)) track('CTA diagnosi', { page });
+  });
+  if (form) form.addEventListener('submit', () => track('Formulari enviat', { page }));
 });
 
 function initLangSelector() {

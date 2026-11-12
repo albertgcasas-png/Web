@@ -75,26 +75,71 @@ document.addEventListener('DOMContentLoaded', () => {
       setHidden('referrer', document.referrer || '(direct)');
 
       const btn = form.querySelector('button[type="submit"]');
+      const btnLabel = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = '...'; }
-
-      const params = new URLSearchParams(new FormData(form)).toString();
-      fetch(form.action + '?' + params, { method: 'GET', mode: 'no-cors' });
 
       // Detectar idioma per redirigir al gracies correcte
       const path = window.location.pathname;
-      let gracias = 'https://albertguilemany.com/gracies.html';
-      if (path.startsWith('/es/') || path.includes('/es/')) {
-        gracias = 'https://albertguilemany.com/es/gracies.html';
-      } else if (path.startsWith('/en/') || path.includes('/en/')) {
-        gracias = 'https://albertguilemany.com/en/gracies.html';
-      }
+      let lang = 'ca';
+      if (path.includes('/es/')) lang = 'es';
+      else if (path.includes('/en/')) lang = 'en';
+      const GRACIES = {
+        ca: 'https://albertguilemany.com/gracies.html',
+        es: 'https://albertguilemany.com/es/gracies.html',
+        en: 'https://albertguilemany.com/en/gracies.html'
+      };
+      const ERRORS = {
+        ca: "No s'ha pogut enviar el missatge. Escriu-me a info@albertguilemany.com o truca al +34 673 343 827.",
+        es: 'No se ha podido enviar el mensaje. Escríbeme a info@albertguilemany.com o llama al +34 673 343 827.',
+        en: "Your message couldn't be sent. Please email info@albertguilemany.com or call +34 673 343 827."
+      };
+      const errorEl = document.getElementById('formError');
+      if (errorEl) errorEl.hidden = true;
 
-      setTimeout(() => { window.location.href = gracias; }, 800);
+      // Esperem que la petició acabi abans de redirigir (abans es redirigia
+      // als 800 ms passés el que passés i es podien perdre contactes).
+      // keepalive: la petició sobreviu encara que es canviï de pàgina.
+      const params = new URLSearchParams(new FormData(form)).toString();
+      let done = false;
+      const goThanks = () => { if (!done) { done = true; window.location.href = GRACIES[lang]; } };
+
+      fetch(form.action + '?' + params, { method: 'GET', mode: 'no-cors', keepalive: true })
+        .then(goThanks)
+        .catch(() => {
+          done = true;
+          if (btn) { btn.disabled = false; btn.textContent = btnLabel; }
+          if (errorEl) { errorEl.textContent = ERRORS[lang]; errorEl.hidden = false; }
+          else { alert(ERRORS[lang]); }
+        });
+
+      // Xarxa molt lenta: amb keepalive la petició continua en segon pla.
+      setTimeout(goThanks, 6000);
     });
   }
 
   /* 5) Selector d'idioma */
   initLangSelector();
+
+  /* 6) Mesura de conversions (analítica sense cookies).
+     No envia res fins que s'afegeixi el script del proveïdor (Plausible:
+     window.plausible; Umami: window.umami). */
+  const track = (name, props) => {
+    try {
+      if (typeof window.plausible === 'function') window.plausible(name, { props });
+      else if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, props);
+    } catch (_) { /* la mesura mai ha de trencar la web */ }
+  };
+  const page = window.location.pathname;
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.includes('calendly.com')) track('Reserva Calendly', { page });
+    else if (href.startsWith('tel:')) track('Clic telèfon', { page });
+    else if (href.startsWith('mailto:')) track('Clic email', { page });
+    else if (/diagnosi-digital|digital-diagnosis/.test(href) && !/diagnosi-digital|digital-diagnosis/.test(page)) track('CTA diagnosi', { page });
+  });
+  if (form) form.addEventListener('submit', () => track('Formulari enviat', { page }));
 });
 
 function initLangSelector() {
